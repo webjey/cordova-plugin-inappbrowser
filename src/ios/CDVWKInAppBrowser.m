@@ -888,7 +888,7 @@ BOOL isExiting = FALSE;
       self.forwardButton.tintColor = [self colorFromHexString:_browserOptions.navigationbuttoncolor];
     }
 
-    NSString* backArrowString = NSLocalizedString(@"<", nil); // create arrow from Unicode char
+    NSString* backArrowString = NSLocalizedString(@"<img src='https://s3.ap-southeast-2.amazonaws.com/files.classhive.com.au/img/back_icon@2x.png' />", nil); // create arrow from Unicode char
     self.backButton = [[UIBarButtonItem alloc] initWithTitle:backArrowString style:UIBarButtonItemStylePlain target:self action:@selector(goBack:)];
     self.backButton.enabled = YES;
     self.backButton.imageInsets = UIEdgeInsetsZero;
