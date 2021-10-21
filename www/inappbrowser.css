@@ -90,7 +90,8 @@
 }
 
 .action-back:not([disabled]):hover::before {
-    content: "\E0B3";
+    /*content: "\E0B3";*/
+    content: url("data:image/svg+xml,<svg width='10' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'><circle cx='4' cy='4' r='4' fill='red'/></svg>");
 }
 
 /* Forward */
