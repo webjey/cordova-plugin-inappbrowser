@@ -888,8 +888,13 @@ BOOL isExiting = FALSE;
       self.forwardButton.tintColor = [self colorFromHexString:_browserOptions.navigationbuttoncolor];
     }
 
-    NSString* backArrowString = NSLocalizedString(@"<", nil); // create arrow from Unicode char
-    self.backButton = [[UIBarButtonItem alloc] initWithTitle:backArrowString style:UIBarButtonItemStylePlain target:self action:@selector(goBack:)];
+    // NSString* backArrowString = NSLocalizedString(@"<", nil); // create arrow from Unicode char
+
+    // Create an image
+    // https://stackoverflow.com/questions/50452178/ios-objective-c-assign-custom-image-to-uibarbuttonitem
+    UIImage *myImage = [UIImage imageNamed:@"AppIcon"];
+
+    self.backButton = [[UIBarButtonItem alloc] initWithImage:myImage style:UIBarButtonItemStylePlain target:self action:@selector(goBack:)];
     self.backButton.enabled = YES;
     self.backButton.imageInsets = UIEdgeInsetsZero;
     if (_browserOptions.navigationbuttoncolor != nil) { // Set button color if user sets it in options
