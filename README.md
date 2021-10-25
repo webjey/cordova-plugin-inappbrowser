@@ -1,5 +1,5 @@
 ---
-title: Inappbrowser
+title: Inappbrowser (webjey)
 description: Open an in-app browser window.
 ---
 <!--
